@@ -1,27 +1,324 @@
 <!DOCTYPE html>
-<html>
- <head>
-   <title>YOUR NAME Portfolio</title>
- </head>
- <body>
-   <nav>
-     <ul>
-       <li><a href=”/”>Home</a></li>
-       <li><a href=”/about”>About</a></li>
-       <li><a href=”/resume”>Resume</a></li>
-       <li><a href=”/blog”>Blog</a></li>
-     </ul>
-   </nav>
-   <div class=”container”>
-     <div class=”blurb”>
-       <h1>Hi, I am YOUR NAME!</h1>
-       <p>This is my first page for my personal website!</a></p>
-     </div>
-   </div>
-   <footer>
-   <ul>
-     <li><a href=”mailto:YOUREMAIL”>YOUREMAIL</a></li>
-   </ul>
-   </footer>
- </body>
+<html lang="en-US">
+
+<!-- Head starts -->
+	<head>
+		<meta charset = "UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="images/ASKLogoBlack.png" type="image/png" sizes="">
+		<title>ASK App Studio - #1 Web and mobile app development company in chennai</title>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+		<script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+		<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'>
+		<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+		<link rel='stylesheet' href='css/home.css' type='text/css' media='all' media="screen">
+		<link rel='stylesheet' href='css/footer.css' type='text/css' media='all'>
+
+	</head>
+<!-- Head ends-->
+
+<!-- Body starts-->
+	<body>
+	<!-- Navigation-->
+	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top" id="NavBar">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="home.php"><img width="230" height="40" src="images/logo.png"></a>
+			<button class="navbar-toggler" type="botton" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="home.php">Home</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="products.php">Products</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="services.php">Services</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="contactus.php">ContactUs</a>
+					</li>
+					<!-- Facebook -->
+					<div class="d-flex flex-row order-2 order-lg-3">
+						<ul class="navbar-nav flex-row">  
+								<li class="nav-item"><a class="nav-link px-2" href="https://www.facebook.com/ASKAppStudio"><span class="fab fa-facebook"></span></a></li>
+								<!--
+									<li class="nav-item"><a class="nav-link px-2" href="#"><span class="fab fa-youtube"></span></a></li>
+								-->
+								<li class="nav-item"><a class="nav-link px-2" href="https://www.linkedin.com/company/ask-app-studio/"><span class="fab fa-linkedin"></span></a></li>
+						</ul>
+					</div>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+	<!-- Image Slider-->
+	<div id="slides" class="carousel slide" data-ride="carousel">
+		<ul class="carousel-indicators">
+			<li data-target="#slides" data-slide-to="0" class="active"></li>
+			<li data-target="#slides" data-slide-to="1" class="active"></li>
+			<li data-target="#slides" data-slide-to="2" class="active"></li>
+		</ul>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="images/ASKGif1-h800.gif">
+				<div class="carousel-caption">
+					<h1 class="display-2">Website Development</h1>
+					<h3>Experts in Professional Website Development</h3>
+					<!--<button type="button" class="btn btn-outline-light btn-lg">View Demo</button>-->
+					<a type="button" class="btn btn-primary btn-lg" href="contactus.php" role="link">Enquire</a> 
+				</div>
+			</div>
+
+			<div class="carousel-item">
+				<img src="images/mobile-app-1-h420.gif">
+				<div class="carousel-caption">
+					<h1 class="display-4">Mobile App Developement</h1>
+					<h3>Enterprise grade andriod app developement</h3>
+					<button type="button" class="btn btn-dark btn-lg" href="contactus.php">Enquire</button>
+				</div>
+			</div>
+
+			<div class="carousel-item">
+				<img src="images/custom-software-570.gif">
+				<div class="carousel-caption">
+					<h1 class="display-4">Custom Product Developement</h1>
+					<h3>Give us a requirement, we will get it done for you</h3>
+					<button type="button" class="btn btn-dark btn-lg" href="contactus.php">Enquire</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Jumbotron-->
+	<div class="container-fluid">
+		<div class="row jumbotron text-center">
+			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+				<p class="lead">
+					<strong>We are a young tech startup with experience in website, eCommerce and product development. We have off-the-shelf ready to deploy solutions for Restaurant POS, eCommerce solution for online business and RateUs feedback system.</strong>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Welcome Section-->
+	<div class="container-fluid padding">
+		<div class="row welcome text-center">
+			<div class="col-12">
+				<h1 class="display-4">Our technology stack</h1>
+			</div>
+			<div class="col-12">
+				<p class="lead"></p>
+			</div>		
+		</div>
+
+	</div>
+
+	<!-- Three Column Section-->
+	<div class="container-fluid padding">
+		<div class="row text-center padding">
+			<div class="col-xs-12 col-sm-6 col-md-4">
+				<i class="fas fa-code"></i>
+				<h3>HTML5</h3>
+				<p></p>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4">
+				<i class="fas fa-bold"></i>
+				<h3>BOOTSTRAP</h3>
+				<p></p>
+			</div>
+			<div class="col-sm-12 col-md-4">
+				<i class="fab fa-css3"></i>
+				<h3>CSS3</h3>
+				<p></p>
+			</div>
+			<div class="col-sm-12 col-md-4">
+				<i class="fab fa-php"></i>
+				<h3>PHP8</h3>
+				<p></p>
+			</div>
+			<div class="col-sm-12 col-md-4">
+				<i class="fab fa-android"></i>
+				<h3>ANDRIOD</h3>
+				<p></p>
+			</div>
+			<div class="col-sm-12 col-md-4">
+				<i class="fas fa-database"></i>
+				<h3>MySQL</h3>
+				<p></p>
+			</div>
+		</div>
+		<hr class="my-4">
+	</div>
+
+
+	<!-- Two Column Section-->	
+	<div class="container-fluid padding">
+		<div class="row padding">	
+			<div class="col-md-12 col-lg-6">
+				<h2>Build your brand with us...</h2>
+				<br>
+				<p>ASK has a young talent workforce with expertise in website, Mobile apps, eCommerce<br> 
+					and custom software/product development.<br> 
+					<br> 
+					Our solutions and products are best in class suitable for various MSME (Micro, Medium, Small Enterprises).<br></p>
+				<p>We constantly evalute and refine our strategies and best practises to provide best in class solution to our partners and clients 
+					to solve their emerging problems.</p>
+				<p>Our sales and support teams are avilable 24 X 7 to answer your queries / resolve your any technical issues.</p>
+				<a href="contactus.php" class="btn btn-primary">Learn More</a>
+			</div>
+			<div class="col-md-6">
+				<img width=650px src="images/build_brand.gif" class="img-fluid">
+			</div>
+		</div>
+		<hr class="my-4">
+	</div>
+
+	<!-- Meet The Team-->
+	<div class="container-fluid padding">
+		<div class="row welcome text-center">
+			<div class="col-12">
+				<h1 class="display-4">Our Products</h1>
+			</div>
+		</div>
+	</div>
+
+	<!-- Cards-->
+	<div class="container-fluid padding">
+		<div class="row padding">
+			<div class="col-md-4">
+				<div class="card">
+					<img class="card-imd-top" height=761px width=602px src="images/ePOS-1.png">
+					<div class="card-body">
+						<h4 class="card-title">ePOS</h4>
+						<p class="card-text">ASK's ePOS is one of the premium billing software for Restaurant businesses. Track your sales, expenses and inventory from mobile and web.</p>
+						<a href="#" class="btn btn-outline-secondary">Explore</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="card">
+					<img class="card-imd-top" height=761px width=602px src="images/defect-mgmt.png">
+					<div class="card-body">
+						<h4 class="card-title">BugDebug</h4>
+						<p class="card-text">BugDebug is an excellent defect tracking system for modern agile teams. It enhances better collaboration between DEV & QA teams</p>
+						<a href="#" class="btn btn-outline-secondary">Explore</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="card">
+					<img class="card-imd-top" height=761px width=602px src="images/feedback.png">
+					<div class="card-body">
+						<h4 class="card-title">RateUs</h4>
+						<p class="card-text">RateUS is a next generation feedback and rating system for Retail, Restaurant and any customer servicing industries such as Spa, Saloon, CakeShops etc</p>
+						<a href="#" class="btn btn-outline-secondary">Explore</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr class="my-4">
+	</div>
+
+	<!-- Two Column Section-->
+	<div class="container-fluid padding">
+		<div class="row padding">
+			<div class="col-lg-6">
+				<h2>Our Vision</h2>
+				<p>No matter which industry you belong to, every business must become digital</p>
+				<p>ASK App Studio is one of the prominent tech startups that can help other organizations to transform into digital enterprises. It differentiates you from competitors in the market and provides better engagement with customers, partners and employees.</p>
+				<p>Our mission is to enhance business growth of our customers with creative design, development and to deliver market defining high quality solutions that create value and reliable competitive advantage to customers around the globe.</p>
+				<br>
+				<h2>Our Mission</h2>
+				<p>Our mission is to enhance business growth of our customers with creative design, development and to deliver market defining high quality solutions that create value and reliable competitive advantage to customers around the globe.</p>
+			</div>
+			<div class="col-lg-6">
+				<img width=650px src="images/vision-1.png" class="img-fluid">
+			</div>
+		</div>
+		<hr class="my-4">
+	</div>
+
+	<!-- Connect-->
+	<!--<div class="container-fluid padding">
+		<div class="row text-center padding">
+			<div class="col-12">
+				<h2>Connect</h2>
+			</div>
+			<div class="col-12 social padding">
+				<a class="btn btn-primary" style="background-color: #3b5998" href="https://www.facebook.com/ASKAppStudio" role="button"><i class="fab fa-facebook-f"></i></a>
+				<a class="btn btn-primary" style="background-color: #0082ca" href="https://www.linkedin.com/company/ask-app-studio/" role="button"><i class="fab fa-linkedin"></i></a>
+				<a class="btn btn-primary" style="background-color: #ed302f" href="https://www.youtube.com" role="button"><i class="fab fa-youtube"></i></a>
+			</div>
+		</div>
+	</div>-->
+
+	<!-- Footer-->
+	<footer>
+	<div class="container-fluid padding">
+		<div class="row text-center">
+			<div class="col-md-4">
+				
+				<!--<img width="135" height="40" src="images/ASKLogoBlackLongBorder.png">-->
+				<h5>ASK App Studio Pvt Ltd</h5>
+				<hr class="light">
+				<p>+91 98405 37126</p>
+				<p>support@askappstudio.com</p>
+				<p>Chennai, TamilNadu, IN</p>
+				<br>
+			</div>
+			<div class="col-md-4" >
+				
+				<h5>Our Services</h5>
+				<hr class="light">
+				<p>Website Developement</p>
+				<p>Mobile App Developement</p>
+				<p>eCommerce Developement</p>
+				<p>Custom Product Developement</p>
+				<p>Independent Software Testing</p>
+				<br>
+			</div>
+			<div class="col-md-4">
+				
+				<h5>Our Products</h5>
+				<hr class="light">
+				<p>ePOS Billing System</p>
+				<p>BugDebug Defect Management System</p>
+				<p>RateUs Feedback System</p>
+
+			</div>
+			<div class="col-12">
+				<hr class="light-100">
+				<h5>&copy; 2021 ASK App Studio</h5>
+			</div>
+		</div>
+	</div>
+	</footer><!-- #colophon -->
+
+	<script type="text/javascript">
+	window.onscroll = function() {freezeFunction()};
+		var header = document.getElementById("NavBar");
+		var sticky = header.offsetTop;
+		function freezeFunction() {
+			if (window.pageYOffset > sticky) {header.classList.add("sticky");
+			} 
+			else {header.classList.remove("sticky");
+			}}
+	</script>
+
+	</body>
+<!-- Body ends-->
+
 </html>
